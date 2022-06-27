@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /muti
+    encoding:
+      force: true
+      charset: UTF-8
+
+#
+spring:
+  datasource:
+    username: sql_47_113_201_2
+    password: jHxyjD5DPXEmSsc2
+    url: jdbc:mysql://47.113.201.20:3306/order_manager
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# mybatis??
+mybatis:
+  type-aliases-package: com.yx.module.model
+  mapper-locations: classpath:mapper/*Dao.xml
